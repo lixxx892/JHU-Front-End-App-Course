@@ -1,0 +1,48 @@
+.navbar {
+	background-color:#8DB099;
+	border:2px solid #5E7867;
+}
+.navbar-brand{
+	font-size: 1.5em;
+}
+#toggle-button,#menu-lists{
+	visibility: hidden;
+}
+#menu-lists{
+	font-size:1.2em;
+}
+#navbarNavAltMarkup{
+	background-color:#93AB99;
+	border-bottom: 2px solid #5E7867;
+}
+.menu-box{
+	background-color:#B3C796;
+	padding:40px 10px;
+	margin:10% 2%;
+	position: relative;
+}
+.box-title{
+	position: absolute;
+	top:5px;
+	right:0px;
+	left:0px;
+	font-weight:bold;
+}
+body{
+	background-color:#C7DDCE;
+}
+#heading{
+	padding-top:20px;
+}
+/*Devices larger than XS*/
+@media(min-width: 576px){
+	#navbarNavAltMarkup{
+	    display: none;
+    }
+}
+/*Extra Small Devices*/
+@media(max-width:575px){
+	#toggle-button,#menu-lists,#navbarNavAltMarkup{
+	    visibility: visible;
+    }
+}
