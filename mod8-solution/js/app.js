@@ -8,7 +8,7 @@ angular.module('NarrowItDownApp', [])
 
 function FoundItemsDirective() {
   var ddo = {
-    templateUrl: 'https://lixxx892.github.io/JHU-Front-End-App-Course/mod8-solution/menuItemList.html',
+    templateUrl: 'menuItemList.html',
     scope: {
       found: '<',
       onRemove: '&'
