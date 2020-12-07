@@ -1,0 +1,21 @@
+
+  <div class="container">
+  <h2 id="menu-categories-title">My Registration Information</h2>
+  
+  <div ng-if="userCtrl.user.registered">
+    First Name: {{userCtrl.user.firstName}} <br>
+    Last Name: {{userCtrl.user.lastName}} <br>
+    Email: {{userCtrl.user.email}} <br>
+    Phone: {{userCtrl.user.phone}} <br><br>
+    My favorite dish is: <br>
+    {{userCtrl.user.dishName}} <br>
+    {{userCtrl.user.dishDesc}} <br><br>
+    <img class="img-responsive" width="250" height="150" ng-src="{{userCtrl.basePath}}/images/{{userCtrl.user.favorite}}.jpg" alt="{{userCtrl.user.dishName}}">
+  </div>
+  
+  <div ng-hide="userCtrl.user.registered">
+    You  have not signed up yet. <a ui-sref="public.signup">Sign up</a> now!
+  </div>
+
+  </div>
+
